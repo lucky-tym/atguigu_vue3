@@ -12,7 +12,10 @@
 <script lang="ts" setup name="Person">
   import {ref} from 'vue'
 
-  // 数据，原来是写在data中的，此时的name、age、tel都不是响应式的数据
+  /*
+    数据，原来是写在data中的，此时的name、age、tel都不是响应式的数据
+    name不是响应式的，name.value是响应式的
+  */
   let name = ref('张三')
   let age = ref(18)
   let tel = '13888888888'

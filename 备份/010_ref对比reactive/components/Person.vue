@@ -28,7 +28,7 @@
     // car = {brand:'奥拓',price:1} //这么写页面不更新的
     // car = reactive({brand:'奥拓',price:1}) //这么写页面不更新的
 
-    // 下面这个写法页面可以更新
+    // 下面这个写法页面可以更新，对象地址不发生变化，每个属性会重新赋值
     Object.assign(car,{brand:'奥拓',price:1})
   }
   function changeSum(){
